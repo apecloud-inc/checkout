@@ -2267,9 +2267,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.execute = exports.RetryHelper = void 0;
 const core = __importStar(__nccwpck_require__(2186));
-const defaultMaxAttempts = 3;
-const defaultMinSeconds = 10;
-const defaultMaxSeconds = 20;
+const defaultMaxAttempts = 10;
+const defaultMinSeconds = 5;
+const defaultMaxSeconds = 5;
 class RetryHelper {
     constructor(maxAttempts = defaultMaxAttempts, minSeconds = defaultMinSeconds, maxSeconds = defaultMaxSeconds) {
         this.maxAttempts = maxAttempts;

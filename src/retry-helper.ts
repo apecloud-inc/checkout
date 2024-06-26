@@ -1,8 +1,8 @@
 import * as core from '@actions/core'
 
-const defaultMaxAttempts = 3
-const defaultMinSeconds = 10
-const defaultMaxSeconds = 20
+const defaultMaxAttempts = 10
+const defaultMinSeconds = 5
+const defaultMaxSeconds = 5
 
 export class RetryHelper {
   private maxAttempts: number
